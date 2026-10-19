@@ -1,0 +1,34 @@
+"""Configuration constants for lane analytics.
+
+These defaults are intentionally conservative so analytics work can run beside
+real-time ALPR without adding per-frame database load.
+"""
+
+TRAJECTORY_SAMPLE_INTERVAL_MS = 500
+TRAJECTORY_RETENTION_DAYS = 7
+
+HEATMAP_DEFAULT_GRID_SIZE = 32
+HEATMAP_MAX_RANGE_HOURS = 24
+HEATMAP_DEFAULT_RANGE_HOURS = 1
+HEATMAP_MAX_BINS = 5000
+
+TRACK_STATE_MAX_HISTORY = 30
+TRACK_STATE_MAX_AGE_SECONDS = 5
+MIN_TRACK_HISTORY_FRAMES = 8
+MIN_LANE_STABLE_FRAMES = 4
+
+MIN_DETECTION_CONFIDENCE = 0.35
+MAX_BBOX_JUMP_RATIO = 0.45
+MAX_LANE_NONE_RATIO = 0.35
+
+MIN_LATERAL_RATIO = 0.35
+MIN_LATERAL_SPEED_PX_S = 80
+MAX_GAP_PX = 90
+PIXEL_TTC_WARNING = 2.5
+PIXEL_TTC_DANGER = 1.5
+CUTIN_COOLDOWN_SECONDS = 8
+
+
+# Keep False in production to avoid per-frame logging on the video stream.
+ANALYTICS_DEBUG = False
+LANE_CONFIG_CACHE_TTL_SECONDS = 5.0

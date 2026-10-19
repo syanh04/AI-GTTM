@@ -1,0 +1,104 @@
+# ===========================================================================
+# AI-GTTM: Enterprise Git Ignore Specification
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# Deep Learning Checkpoints & Model Weights (Proprietary IP Protected)
+# ---------------------------------------------------------------------------
+*.pt
+*.pth
+*.onnx
+*.engine
+*.bin
+*.pdmodel
+*.pdparams
+*.pdopt
+*.pkl
+backend/models/*
+!backend/models/.gitkeep
+!backend/models/README.md
+
+# ---------------------------------------------------------------------------
+# Databases & Runtime State
+# ---------------------------------------------------------------------------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+backend/alpr.db*
+
+# ---------------------------------------------------------------------------
+# Processed Crops, Uploads & Telemetry Artifacts
+# ---------------------------------------------------------------------------
+backend/processed/crops/*
+!backend/processed/crops/.gitkeep
+backend/processed/detections/*
+!backend/processed/detections/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/debug_segments/*
+!backend/debug_segments/.gitkeep
+
+# ---------------------------------------------------------------------------
+# Large Media & Video Datasets
+# ---------------------------------------------------------------------------
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.flv
+backend/videos/*
+!backend/videos/.gitkeep
+
+# ---------------------------------------------------------------------------
+# Secrets & Environment Configurations
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# ---------------------------------------------------------------------------
+# Node / Next.js
+# ---------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+.vercel/
+frontend/.vercel/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------------------------------------------------------------------------
+# Python & Caches
+# ---------------------------------------------------------------------------
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+venv_train/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# Operating System & IDE Artifacts
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

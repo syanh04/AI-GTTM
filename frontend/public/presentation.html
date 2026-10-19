@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="cyberpunk-neon">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Giới thiệu Hệ thống Giám sát Giao thông Thông minh (Smart Traffic)</title>
+<link rel="stylesheet" href="/presentation-assets/fonts.css">
+<link rel="stylesheet" href="/presentation-assets/base.css">
+<link rel="stylesheet" id="theme-link" href="/presentation-assets/themes/cyberpunk-neon.css">
+<link rel="stylesheet" href="/presentation-assets/animations/animations.css">
+</head>
+<body data-themes="cyberpunk-neon,tokyo-night,dracula,nord,gruvbox-dark,terminal-green,minimal-white,editorial-serif,soft-pastel,neo-brutalism" data-theme-base="/presentation-assets/themes/">
+<div class="deck">
+
+  <!-- Slide 1: Bìa trình chiếu -->
+  <section class="slide" data-title="Bìa">
+    <p class="kicker">Hà Nội · 2026</p>
+    <h1 class="h1 anim-fade-up" data-anim="fade-up">HỆ THỐNG GIÁM SÁT<br><span class="gradient-text">GIAO THÔNG THÔNG MINH</span></h1>
+    <p class="lede">Next.js 15 & FastAPI & Trí tuệ nhân tạo (YOLO & OCR)</p>
+    <div class="deck-footer">
+      <span class="dim2">TrafficAI · Nền Tảng Giám Sát Giao Thông Thông Minh</span>
+      <span class="slide-number" data-current="1" data-total="5"></span>
+    </div>
+    <div class="notes">
+      Giới thiệu giải pháp Nền tảng giám sát giao thông và nhận diện biển số tự động thông minh TrafficAI. Hệ thống được triển khai trên nền tảng web hiện đại phục vụ giám sát và xử lý vi phạm thời gian thực.
+    </div>
+  </section>
+
+  <!-- Slide 2: Mục tiêu dự án -->
+  <section class="slide" data-title="Mục tiêu">
+    <p class="kicker">Mục tiêu & Tầm nhìn</p>
+    <h2 class="h2">Giải pháp tối ưu hóa giao thông đô thị</h2>
+    <div class="grid g3 mt-l anim-stagger-list" data-anim-target>
+      <div class="card">
+        <h4>01 · Realtime Monitoring</h4>
+        <p class="dim">Giám sát trực tuyến 6 camera luồng mkv chất lượng cao cùng nhật ký giao thông tức thời.</p>
+      </div>
+      <div class="card">
+        <h4>02 · AI Violation Detect</h4>
+        <p class="dim">Tự động phát hiện vượt đèn đỏ và đi sai làn đường dựa trên phân tích hình ảnh và vạch stopline.</p>
+      </div>
+      <div class="card">
+        <h4>03 · AI Assistant & Chatbot</h4>
+        <p class="dim">Trợ lý AI đắc lực tư vấn luật giao thông và tự động trích dẫn Nghị định 100 xử phạt.</p>
+      </div>
+    </div>
+    <div class="deck-footer">
+      <span class="dim2">Mục tiêu dự án</span>
+      <span class="slide-number" data-current="2" data-total="5"></span>
+    </div>
+    <div class="notes">
+      Chúng tôi tập trung giải quyết 3 bài toán lớn: Giám sát trực tuyến thời gian thực, Tự động hóa phát hiện vi phạm và xây dựng Trợ lý ảo AI đắc lực hỗ trợ người vận hành xử lý nhanh hồ sơ vi phạm.
+    </div>
+  </section>
+
+  <!-- Slide 3: Kết quả thực nghiệm OCR -->
+  <section class="slide center tc" data-title="Thực nghiệm">
+    <div>
+      <p class="kicker">Độ chính xác OCR & Nhận diện</p>
+      <div style="font-size:180px;font-weight:900;line-height:1">
+        <span class="counter gradient-text" data-to="95">0</span><span class="gradient-text">%</span>
+      </div>
+      <h3>Độ chính xác nhận diện biển số nhờ cơ chế biểu quyết Consensus</h3>
+      <p class="dim" style="margin-top:20px">Tự động nâng cấp kết quả nhận dạng khi tìm thấy khung hình rõ nét hơn.</p>
+    </div>
+    <div class="deck-footer">
+      <span class="dim2">Kết quả thực nghiệm</span>
+      <span class="slide-number" data-current="3" data-total="5"></span>
+    </div>
+    <div class="notes">
+      Nhờ cơ chế biểu quyết consensus qua nhiều khung hình và thuật toán trích xuất vùng chữ số trên thùng xe tải, hệ thống đạt độ chính xác nhận diện biển số thực tế lên đến 95%.
+    </div>
+  </section>
+
+  <!-- Slide 4: Kiến trúc công nghệ -->
+  <section class="slide" data-title="Kiến trúc">
+    <p class="kicker">Công nghệ sử dụng</p>
+    <h2 class="h2">Kiến trúc tách biệt Frontend & Backend</h2>
+    <div class="grid g2 mt-l">
+      <div class="card">
+        <h4>Next.js 15 & TailwindCSS (UI)</h4>
+        <p class="dim">Giao diện Dashboard V2 hiện đại, hỗ trợ Dark/Light mode, biểu đồ lưu lượng trực quan bằng Recharts và bản đồ vị trí camera GPS.</p>
+      </div>
+      <div class="card">
+        <h4>FastAPI & YOLOv8 (AI Engine)</h4>
+        <p class="dim">Xử lý đa luồng video hiệu năng cao, suy luận AI nhận diện phương tiện và trích xuất crop ảnh biển số thời gian thực.</p>
+      </div>
+    </div>
+    <div class="deck-footer">
+      <span class="dim2">Kiến trúc công nghệ</span>
+      <span class="slide-number" data-current="4" data-total="5"></span>
+    </div>
+    <div class="notes">
+      Hệ thống áp dụng kiến trúc microservices. Frontend Next.js tương tác mượt mà với Backend FastAPI qua các RESTful API và Websocket luồng stream dữ liệu liên tục.
+    </div>
+  </section>
+
+  <!-- Slide 5: Lời cảm ơn -->
+  <section class="slide center tc" data-title="Kết thúc">
+    <h1 class="h1" style="font-size:140px;line-height:1"><span class="gradient-text">CẢM ƠN!</span></h1>
+    <p class="lede">Hệ thống Giám sát Giao thông Thông minh - TrafficAI 2026</p>
+    <p class="dim" style="margin-top:20px">Ấn các phím: ← → để chuyển trang | T đổi theme | S mở màn hình Speaker</p>
+    <div class="deck-footer">
+      <span class="dim2">Kết thúc trình bày</span>
+      <span class="slide-number" data-current="5" data-total="5"></span>
+    </div>
+  </section>
+
+</div>
+<script src="/presentation-assets/runtime.js"></script>
+</body>
+</html>

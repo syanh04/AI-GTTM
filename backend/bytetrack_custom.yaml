@@ -1,0 +1,21 @@
+# ================================================================
+# BYTETRACK CONFIG — Tùy chỉnh cho hệ thống theo dõi xe giao thông
+# Tối ưu để không bỏ sót xe gần camera và xe trong vùng chen chúc
+# ================================================================
+
+tracker_type: bytetrack
+
+# Ngưỡng associate (thay thế track_activation_threshold)
+track_high_thresh: 0.20
+track_low_thresh: 0.1
+new_track_thresh: 0.25
+
+# Giữ lại lost track trong N frame (thay thế lost_track_buffer)
+track_buffer: 60
+
+# Ngưỡng matching IoU (thay thế minimum_matching_threshold)
+match_thresh: 0.8
+
+# Các tham số bổ sung cho modern Ultralytics
+fuse_score: True
+frame_rate: 30

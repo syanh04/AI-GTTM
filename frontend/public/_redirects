@@ -1,0 +1,4 @@
+# Netlify redirects and SPA routing
+/api/*  https://grants-hydrogen-surname-activities.trycloudflare.com/api/:splat  200
+/video_feed/*  https://grants-hydrogen-surname-activities.trycloudflare.com/video_feed/:splat  200
+/*  /index.html  200

@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ai_gttm_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - DATABASE_URL=sqlite:///./alpr.db
+      - MODELS_DIR=./models
+      - RUNTIME_DATA_DIR=.
+      - VIOLATION_CONFIG_PATH=./violation_configs.json
+    volumes:
+      - backend_data:/app/processed
+      - ./backend/models:/app/models
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ai_gttm_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+    depends_on:
+      - backend
+
+volumes:
+  backend_data:
